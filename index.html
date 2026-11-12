@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ShopTHEO</title>
+<script>
+  // Link curto dos produtos da ShopTHEO no WhatsApp: repassa ?p=<id> (ou ?k=<carrinho>) para a pagina de pedido.
+  var destino = 'https://script.google.com/macros/s/AKfycbzhvfTlC1ZsodPQkHqZz7wEdEkaxij-6FejIyPotZHvbd4KPaJB977ubcmsTkAGaAkUxQ/exec';
+  var m = /[?&](p|k)=([A-Za-z0-9_:,-]{1,400})/.exec(location.search);
+  location.replace(destino + (m ? '?' + m[1] + '=' + m[2] : ''));
+</script>
+</head>
+<body style="font: 16px system-ui; padding: 24px">
+<p>Abrindo seu pedido na ShopTHEO…</p>
+<noscript><a href="https://script.google.com/macros/s/AKfycbzhvfTlC1ZsodPQkHqZz7wEdEkaxij-6FejIyPotZHvbd4KPaJB977ubcmsTkAGaAkUxQ/exec">Abrir a ShopTHEO</a></noscript>
+</body>
+</html>
